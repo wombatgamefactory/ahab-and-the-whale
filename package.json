@@ -1,0 +1,15 @@
+{
+  "name": "ahab-and-the-whale",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Browser version of the two-player trick-taking game Ahab and the Whale",
+  "scripts": {
+    "dev": "npx http-server -p 8080 -c-1",
+    "test": "node tests/run-all.mjs",
+    "test:browser": "node tests/ui-browser.mjs --require && node tests/stats-browser.mjs --require",
+    "qa": "node tests/qa/qa-run.mjs",
+    "sweep": "node tests/qa/sweep.mjs",
+    "sim": "node tests/sim.mjs"
+  }
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ahab and the Whale</title>
+  <meta name="description" content="Ahab and the Whale: a two-player trick-taking duel across a sea chart. The suit you lead is the wind that blows. Play against a bot or a friend in your browser.">
+  <meta name="theme-color" content="#EDBE74">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/favicon/favicon-64.png">
+
+  <link rel="canonical" href="https://www.wombatgamefactory.com/ahab-and-the-whale/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.wombatgamefactory.com/ahab-and-the-whale/">
+  <meta property="og:site_name" content="Wombat Game Factory">
+  <meta property="og:title" content="Ahab and the Whale">
+  <meta property="og:description" content="The suit you lead is the wind that blows. A two-player trick-taking duel for ages 10 and up, about ten minutes.">
+  <meta property="og:image" content="https://www.wombatgamefactory.com/ahab-and-the-whale/assets/hero/hero-square.jpg">
+  <meta property="og:image:width" content="1000">
+  <meta property="og:image:height" content="806">
+  <meta property="og:image:alt" content="Captain Ahab in his whaleboat hauling on the line to the white whale">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ahab and the Whale">
+  <meta name="twitter:description" content="The suit you lead is the wind that blows.">
+  <meta name="twitter:image" content="https://www.wombatgamefactory.com/ahab-and-the-whale/assets/hero/hero-square.jpg">
+
+  <!-- Consent banner (CookieYes, same site key as Firefly Festival) then Google tag (gtag.js, G-FNNQF917JJ).
+       Same scripts and order as Firefly Festival, injected here so that localhost and 127.0.0.1
+       (development and the automated tests) neither load the banner nor send hits to GA.
+       window.gtag always exists and just queues on dataLayer, exactly as in the standard snippet. -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FNNQF917JJ');
+    (function () {
+      var h = location.hostname;
+      if (h === 'localhost' || h === '127.0.0.1' || h === '[::1]' || location.protocol === 'file:') return;
+      function add(id, src, next) {
+        var s = document.createElement('script');
+        if (id) s.id = id;
+        s.src = src;
+        s.async = false;
+        if (next) { s.onload = next; s.onerror = next; }
+        document.head.appendChild(s);
+      }
+      add('cookieyes', 'https://cdn-cookieyes.com/client_data/b4b72588ac323168ef2bca929b5e5cd9/script.js', function () {
+        add('', 'https://www.googletagmanager.com/gtag/js?id=G-FNNQF917JJ');
+      });
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-screen="landing">
+  <main id="app"><noscript>Ahab and the Whale needs JavaScript to run in the browser.</noscript></main>
+  <div id="dialog-root"></div>
+  <div id="live" class="sr-only" role="status" aria-live="polite"></div>
+  <script type="module" src="src/ui/main.js"></script>
+</body>
+</html>
